@@ -1,0 +1,162 @@
+.clearfix {
+	  overflow: auto;
+}
+
+/*-------------------side navigation bar--------------------*/
+.navigation ul li {
+  list-style: none;
+  display: inline;
+  font-size: 30px;
+}
+
+.navigation ul li a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.navigation hr {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed;
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background: #eee; 
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidenav  a {
+  padding: 10px 10px 10px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: black;
+  display: block;
+  margin-bottom: 18px;
+  transition: 0.3s;
+}
+.sidenav a i {
+  margin-left: 10px;
+}
+
+.sidenav a:hover {
+  color: #eee;
+  background: lightblue;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: black; 
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/*-------------------Inner content-------------------*/
+.container {
+  margin: 0 100px 0 100px;
+}
+
+.title p {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+
+.link-generater-form form{
+  margin: 0 300px 0 300px;
+}
+
+.link-generater-form input {
+  width: 140px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid black;
+  background: white;
+}
+
+.link-generater-form input:hover {
+  background: #eee;
+}
+#generate-button {
+  width: 70px;
+  margin-bottom: 50px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid black;
+  background: white;
+}
+#generate-button:hover {
+  background: orange;
+  color: white;
+  font-weight: bold;
+}
+
+.area {
+  border: 1px solid black;
+  background: #eee;
+  border-radius: 8px;
+}
+
+.area label {
+  font-weight: bold;
+}
+
+.area p, label {
+  margin-left: 100px;
+}
+
+.area input {
+  width: 450px;
+  margin-bottom: 50px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.area button {
+  width: 100px;
+  margin-bottom: 50px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid black;
+  background: white;
+}
+
+.area button:hover {
+  background: orange;
+  color: white;
+  font-weight: bold;
+}
+
+/*--------------------footer-tag--------------------*/
+.footer {
+ 
+  margin-top: 250px;
+  width: 100%;
+  border-top: 2px solid black;
+  color: black;
+  font-size: 17px;
+
+
+}
+
+.footer p  {
+  display: inline;
+}

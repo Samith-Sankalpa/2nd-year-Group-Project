@@ -1,0 +1,136 @@
+.clearfix {
+	  overflow: auto;
+}
+
+body {
+  background: #eee;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-transform: uppercase;
+ 
+}
+/*-------------------side navigation bar--------------------*/
+.navigation ul li {
+  list-style: none;
+  display: inline;
+  font-size: 30px;
+}
+
+.navigation ul li a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.navigation hr {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed;
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background: #eee; 
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidenav  a {
+  padding: 10px 10px 10px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: black;
+  display: block;
+  margin-bottom: 18px;
+  transition: 0.3s;
+}
+.sidenav a i {
+  margin-left: 10px;
+}
+
+.sidenav a:hover {
+  color: #eee;
+  background: lightblue;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: black; 
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+/*---------------------------------------------------------------*/
+.container {
+	margin: 0 100px 0 100px;
+}
+.title {
+  text-transform: uppercase;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+table {
+  border: 2px solid black;
+  background: white;
+  border-radius: 8px;
+}
+table td {
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.money-withdrawal-form {
+  margin: 0 425px 0 425px;
+}
+
+.money-withdrawal-form table tr td select ,input{
+  padding: 5px;
+  width: 170px;
+  background: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.money-withdrawal-form input:hover {
+  background: green;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.money-withdrawal-form  td {
+  padding: 20px;
+}
+
+/*------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------*/
+.footer {
+  padding: 5px;
+  margin-top: 150px;
+  width: 100%;
+  border-top: 2px solid black;
+  color: black;
+  font-size: 17px;
+
+}
+
+.footer p  {
+  display: inline;
+}

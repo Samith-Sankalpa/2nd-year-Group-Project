@@ -1,0 +1,100 @@
+.clearfix {
+	  overflow: auto;
+}
+
+/*-------------------side navigation bar--------------------*/
+.navigation ul li {
+  list-style: none;
+  display: inline;
+  font-size: 30px;
+}
+
+.navigation ul li a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.navigation hr {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed;
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background: #eee; 
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidenav  a {
+  padding: 10px 10px 10px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: black;
+  display: block;
+  margin-bottom: 18px;
+  transition: 0.3s;
+}
+.sidenav a i {
+  margin-left: 10px;
+}
+
+.sidenav a:hover {
+  color: #eee;
+  background: lightblue;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: black; 
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/*-------------------Inner content-------------------*/
+
+.table table {
+  /*margin-top: 100px;*/
+}
+
+.table table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+.table ul li {
+
+  display: inline;
+  font-size: 20px;
+  margin: 0 10px 0 0;
+  font-weight: bold;
+}
+
+/*--------------------footer-tag--------------------*/
+.footer {
+  padding: 5px;
+  margin-top: 350px;
+  width: 100%;
+  border-top: 2px solid black;
+  color: black;
+  font-size: 17px;
+
+
+}
+
+.footer p  {
+  display: inline;
+}

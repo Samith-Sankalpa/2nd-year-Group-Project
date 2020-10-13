@@ -1,0 +1,149 @@
+.clearfix {
+	  overflow: auto;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+
+
+/*-------------------side navigation bar--------------------*/
+.navigation ul li {
+  list-style: none;
+  display: inline;
+  font-size: 30px;
+}
+
+.navigation ul li a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.navigation hr {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed;
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background: #eee; 
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidenav  a {
+  padding: 10px 10px 10px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: black;
+  display: block;
+  margin-bottom: 18px;
+  transition: 0.3s;
+}
+.sidenav a i {
+  margin-left: 10px;
+}
+
+.sidenav a:hover {
+  color: #eee;
+  background: lightblue;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: black; 
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+/*----------------------------------------------------------------------*/
+.container {
+	margin: 0 100px 0 100px;
+}
+
+ table tr td input {
+  padding: 5px;
+  width: 225px;
+}
+
+table tr td button {
+  padding: 5px;
+  background: none;
+  border: 1px solid black;
+  border-radius: 5px;
+ }
+
+ table tr td button:hover {
+  background: green;
+  font-weight: bold;
+  color: white;
+ }
+
+.card {
+	border: 1px solid black;
+	margin-bottom: 30px;
+}
+.card img {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  margin-bottom: 10px;
+	width: 200px;
+	height: 180px;
+}
+
+.card h4 {
+  margin-left: 20px;
+}
+.card:hover {
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.2);
+}
+
+.promote-button  {
+	float: right;
+	margin: 80px 120px 0 0;
+}
+
+#promoter-button {
+    padding: 8px;
+    width: 150px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#promoter-button:hover {
+  background: green;
+  color: white;
+  font-weight: bold;
+}
+.footer {
+  padding: 5px;
+  margin-top: 150px;
+  width: 100%;
+  border-top: 2px solid black;
+  color: black;
+  font-size: 17px;
+
+}
+
+.footer p  {
+  display: inline;
+}
+
