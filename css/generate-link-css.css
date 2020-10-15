@@ -1,21 +1,46 @@
 .clearfix {
-	  overflow: auto;
+    overflow: auto;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+.container {
+  width: 1000px; 
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 60px;
+  font-family: 'Open Sans', sans-serif;
+  border-bottom: 2px solid black;
 }
 
 /*-------------------side navigation bar--------------------*/
 .navigation ul li {
   list-style: none;
-  display: inline;
+  display: inline-block;
   font-size: 30px;
 }
 
+#user-name {
+  float: right;
+  margin-right: 100px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#open-btn {
+  margin-left: 30px;
+}
 .navigation ul li a {
-  margin-left: 20px;
+  margin-left: 100px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 35px;
 }
 .navigation hr {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+    margin-top: 25px;
 }
 
 .sidenav {
@@ -35,6 +60,7 @@
   padding: 10px 10px 10px 32px;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
   font-size: 17px;
   color: black;
   display: block;
@@ -43,11 +69,6 @@
 }
 .sidenav a i {
   margin-left: 10px;
-}
-
-.sidenav a:hover {
-  color: #eee;
-  background: lightblue;
 }
 
 .sidenav .closebtn {
@@ -63,55 +84,17 @@
   transition: margin-left .5s;
   padding: 20px;
 }
-
 /*-------------------Inner content-------------------*/
-.container {
-  margin: 0 100px 0 100px;
-}
-
-.title p {
-  font-weight: bold;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-
-
-.link-generater-form form{
-  margin: 0 300px 0 300px;
-}
-
-.link-generater-form input {
-  width: 140px;
-  margin-left: 10px;
-  margin-bottom: 50px;
-  padding: 5px;
-  border-radius: 4px;
-  border: 1px solid black;
-  background: white;
-}
-
-.link-generater-form input:hover {
-  background: #eee;
-}
-#generate-button {
-  width: 70px;
-  margin-bottom: 50px;
-  padding: 5px;
-  border-radius: 4px;
-  border: 1px solid black;
-  background: white;
-}
-#generate-button:hover {
-  background: orange;
-  color: white;
-  font-weight: bold;
-}
 
 .area {
   border: 1px solid black;
-  background: #eee;
-  border-radius: 8px;
+  background: #fafafa;
+  border-radius: .25rem;
+  padding: 70px;
+  width: auto;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .area label {
@@ -119,44 +102,59 @@
 }
 
 .area p, label {
-  margin-left: 100px;
+  margin-left: 90px;
 }
 
 .area input {
-  width: 450px;
-  margin-bottom: 50px;
-  padding: 5px;
-  border-radius: 4px;
-  border: 1px solid black;
+    display: block;
+    width: 500px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    display: inline-block;
 }
 
 .area button {
-  width: 100px;
-  margin-bottom: 50px;
-  padding: 5px;
-  border-radius: 4px;
-  border: 1px solid black;
-  background: white;
+    width: 75px; 
+    line-height: 1.5;
+    font-size: 1rem;
+    padding: .375rem .75rem;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    color: white;
+    background-color: #28a745;
+    border-color: #28a745;
+    cursor: pointer;
+    margin-bottom: 50px;
 }
 
 .area button:hover {
-  background: orange;
-  color: white;
-  font-weight: bold;
+    background-color: white;
+    color: #28a745;
 }
 
 /*--------------------footer-tag--------------------*/
 .footer {
- 
-  margin-top: 250px;
-  width: 100%;
   border-top: 2px solid black;
-  color: black;
-  font-size: 17px;
-
-
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.footer p  {
-  display: inline;
+.footer ul li {
+  font-size: 17px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.footer ul li a {
+  font-size: 17px;
+}
+
+.footer ul li a:hover {
+  color: red;
+  text-decoration: underline;
 }

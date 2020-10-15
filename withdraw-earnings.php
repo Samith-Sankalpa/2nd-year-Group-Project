@@ -3,23 +3,24 @@
 <head>
 	<title>Withdraw Earnings</title>
 	<link rel="stylesheet" type="text/css" href="css/withdraw-earnings-css.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
-	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito&family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<script src="js/withdraw-earnings-js.js"></script>
 </head>
 <body>
 	<!-------------- Top-Navigation-Bar ---------------------->
 	<div id="main" class="navigation">
 		<ul>
-			<li onclick="openNav()">&#9776;</li>
+			<li id="open-btn" onclick="openNav()">&#9776;</li>
+			<li><a href="">Affiliox</a></li></a>
+			<li id="user-name">user-name</li>
 		</ul>
 		<hr>	
 	<div class="container">
-		<div class="title">
-			<p>Balance Withdrawal Form</p>
-		</div> <!-- title -->
+		<h2><i class="fas fa-money-check-alt"></i>&nbsp; &nbsp;Balance Withdrawal</h2>
 
-		<p><b>Withdraw Earn:</b> Use this page to transfer your balance to your preferred method of payout. You should have minimum payout amount available in your account. To see the list and status of your payouts. <a href="payout-history.php">Click Here</a></p>
+		<p><b>Withdraw Earn:</b> Use this page to transfer your balance to your preferred method of payout. You should have minimum payout amount available in your account. To see the list and status of your payouts. <a id="payout-history" href="payout-history.php">Click Here</a></p>
 
 		<div class="money-withdrawal-form">
 			<form>
@@ -39,7 +40,7 @@
 					</tr>
 					<tr>
 						<td>Change Amount :</td>
-						<td><input type="number" name="amount"></td>
+						<td><input type="text" name="amount" required="" placeholder="$ 00.00" pattern="[$]{1}[0-9]{2}.[0-9]{2}" id="c-a"></td>
 					</tr>
 				<tr>
 					<td>
@@ -55,10 +56,12 @@
 	</div> <!-- container -->
 
 		<div class="footer">
-  			<p style="float: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  			tempor incididunt ut labore et dolore magna aliqua.</p>
-  			<p style="float: right; margin-right: 180px;">© Affiliox</p>
-  			<a href="" style="float: right; margin-right: 150px; margin-top: 15px;">Privacy & Policy</a>
+  			<ul>
+  				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  				tempor incididunt ut labore et dolore magna aliqua.</li>
+  				<li><a href="">Privacy & Policy</a></li>
+  				<li>© Affiliox</li>
+  			</ul>
 		</div>	<!-- footer -->	
 	</div> <!-- navigation -->
 

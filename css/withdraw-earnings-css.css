@@ -1,33 +1,53 @@
 .clearfix {
-	  overflow: auto;
+    overflow: auto;
 }
 
-body {
-  background: #eee;
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+.container {
+  width: 1000px; 
+  margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
+h2 {
+  margin-top: 60px;
+  font-family: 'Open Sans', sans-serif;
+  border-bottom: 2px solid black;
 }
 
-a:hover {
-  text-transform: uppercase;
- 
-}
+p {font-family: 'Open Sans', sans-serif;}
+
+#payout-history {text-decoration: none;}
+
+#payout-history:hover {color: red; text-decoration: underline; text-transform: uppercase;}
 /*-------------------side navigation bar--------------------*/
 .navigation ul li {
   list-style: none;
-  display: inline;
+  display: inline-block;
   font-size: 30px;
 }
 
-.navigation ul li a {
-  margin-left: 20px;
-  text-decoration: none;
-  font-size: 25px;
+#user-name {
+  float: right;
+  margin-right: 100px;
+  font-family: 'Open Sans', sans-serif;
 }
+
+#open-btn {
+  margin-left: 30px;
+}
+
+.navigation ul li a {
+  margin-left: 100px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 35px;
+}
+
 .navigation hr {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+    margin-top: 25px;
 }
 
 .sidenav {
@@ -47,6 +67,7 @@ a:hover {
   padding: 10px 10px 10px 32px;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
   font-size: 17px;
   color: black;
   display: block;
@@ -55,11 +76,6 @@ a:hover {
 }
 .sidenav a i {
   margin-left: 10px;
-}
-
-.sidenav a:hover {
-  color: #eee;
-  background: lightblue;
 }
 
 .sidenav .closebtn {
@@ -76,35 +92,36 @@ a:hover {
   padding: 20px;
 }
 /*---------------------------------------------------------------*/
-.container {
-	margin: 0 100px 0 100px;
-}
-.title {
-  text-transform: uppercase;
-  font-size: 20px;
-  text-decoration: underline;
-}
 
 table {
-  border: 2px solid black;
-  background: white;
-  border-radius: 8px;
+  border: 2px solid #ddd;
+  border-radius: .25rem;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Open Sans', sans-serif;
 }
+
 table td {
-  width: 150px;
+  width: 250px;
   font-size: 18px;
   font-weight: bold;
 }
-.money-withdrawal-form {
-  margin: 0 425px 0 425px;
-}
 
-.money-withdrawal-form table tr td select ,input{
-  padding: 5px;
-  width: 170px;
-  background: none;
-  border: 1px solid black;
-  border-radius: 5px;
+.money-withdrawal-form table tr td select,input{
+    width: 250px; 
+    line-height: 1.5;
+    font-size: 1rem;
+    padding: .375rem .75rem;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    color: black;
+    background-color: #fafafa;
+    border-color: #28a745;
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-top:40px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .money-withdrawal-form input:hover {
@@ -114,23 +131,34 @@ table td {
   letter-spacing: 1px;
 }
 
+#c-a:hover {
+  background-color: #fafafa;
+  color: black;
+}
+
 .money-withdrawal-form  td {
   padding: 20px;
 }
 
-/*------------------------------------------------------------------*/
-
-/*---------------------------------------------------------------------*/
+/*------------------------footer-tag----------------*/
 .footer {
-  padding: 5px;
-  margin-top: 150px;
-  width: 100%;
   border-top: 2px solid black;
-  color: black;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer ul li {
   font-size: 17px;
-
+  display: inline-block;
+  padding: 10px;
 }
 
-.footer p  {
-  display: inline;
+.footer ul li a {
+  font-size: 17px;
 }
+
+.footer ul li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+

@@ -3,25 +3,26 @@
 <head>
   <title>Promoter Dashboard</title>
   <link rel="stylesheet" type="text/css" href="css/review-feedback-css.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <script src="js/review-feedback-js.js"></script>
 </head>
 <body>
   <!-------------- Top-Navigation-Bar ---------------------->
-  <div id="main" class="navigation">
-    <ul>
-      <li onclick="openNav()">&#9776;</li>
-      <li><a href="">Affiliox</a></li></a>
-      <li style="float: right;">user-name</li>
-    </ul>
-    <hr>  
+      <div id="main" class="navigation">
+            <ul>
+              <li id="open-btn" onclick="openNav()">&#9776;</li>
+              <li><a href="">Affiliox</a></li></a>
+              <li id="user-name">user-name</li>
+            </ul>
+          <hr>
     <!-- inner part of the evry dashboard -->
               
     <div class="container">
-      
+      <h2><i class="far fa-comment-dots"></i>&nbsp; &nbsp;Review Feedback</h2>
+
       <div class="top">
-        <h3>Review Feedbacks</h3>
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.</h4>
       </div> <!-- top -->
@@ -86,7 +87,7 @@
               <td></td>
             </tr>
             <tr>
-              <td>Amaizing! Easy to search and find a needed product.</td>
+              <td>Amaizing! Easy to search.</td>
               <td><textarea placeholder="Write Reply"></textarea></td>
             </tr>
             <tr>
@@ -155,10 +156,12 @@
 
     </div> <!-- container -->
     <div class="footer">
-        <p style="float: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p style="float: right; margin-right: 180px;">© Affiliox</p>
-        <a href="" style="float: right; margin-right: 150px; margin-top: 15px;">Privacy & Policy</a>
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</li>
+          <li><a href="">Privacy & Policy</a></li>
+          <li>© Affiliox</li>
+        </ul>
     </div>  <!-- inner-part --> 
   </div> 
   <div id="mySidenav" class="sidenav">
@@ -174,3 +177,4 @@
 
 </body>
 </html>
+

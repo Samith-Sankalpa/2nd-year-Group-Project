@@ -1,21 +1,45 @@
 .clearfix {
-	  overflow: auto;
+    overflow: auto;
 }
 
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+.container {
+  width: 1000px; 
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 60px;
+  font-family: 'Open Sans', sans-serif;
+  border-bottom: 2px solid black;
+}
 /*-------------------side navigation bar--------------------*/
 .navigation ul li {
   list-style: none;
-  display: inline;
+  display: inline-block;
   font-size: 30px;
 }
 
+#user-name {
+  float: right;
+  margin-right: 100px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#open-btn {
+  margin-left: 30px;
+}
 .navigation ul li a {
-  margin-left: 20px;
+  margin-left: 100px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 35px;
 }
 .navigation hr {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+    margin-top: 25px;
 }
 
 .sidenav {
@@ -35,6 +59,7 @@
   padding: 10px 10px 10px 32px;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
   font-size: 17px;
   color: black;
   display: block;
@@ -43,11 +68,6 @@
 }
 .sidenav a i {
   margin-left: 10px;
-}
-
-.sidenav a:hover {
-  color: #eee;
-  background: lightblue;
 }
 
 .sidenav .closebtn {
@@ -64,10 +84,13 @@
   padding: 20px;
 }
 
+
 /*-------------------Inner content-------------------*/
 
 .table table {
-  /*margin-top: 100px;*/
+  margin-top: 60px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 120px;
 }
 
 .table table, th, td {
@@ -75,6 +98,9 @@
   border-collapse: collapse;
   padding: 15px;
 }
+
+.table table tr:hover { background-color: #fafafa; }
+
 .table ul li {
 
   display: inline;
@@ -83,18 +109,29 @@
   font-weight: bold;
 }
 
-/*--------------------footer-tag--------------------*/
-.footer {
-  padding: 5px;
-  margin-top: 350px;
-  width: 100%;
-  border-top: 2px solid black;
-  color: black;
-  font-size: 17px;
-
-
+.table p {
+  margin-top: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.footer p  {
-  display: inline;
+/*--------------------footer-tag--------------------*/
+.footer {
+  border-top: 2px solid black;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer ul li {
+  font-size: 17px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.footer ul li a {
+  font-size: 17px;
+}
+
+.footer ul li a:hover {
+  color: red;
+  text-decoration: underline;
 }

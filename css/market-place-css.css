@@ -1,30 +1,45 @@
 .clearfix {
-	  overflow: auto;
+    overflow: auto;
 }
 
-h3 {
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 25px;
-  text-decoration: underline;
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+.container {
+  width: 1000px; 
+  margin: 0 auto;
 }
 
-
-
+h2 {
+  margin-top: 60px;
+  font-family: 'Open Sans', sans-serif;
+  border-bottom: 2px solid black;
+}
 /*-------------------side navigation bar--------------------*/
 .navigation ul li {
   list-style: none;
-  display: inline;
+  display: inline-block;
   font-size: 30px;
 }
 
+#user-name {
+  float: right;
+  margin-right: 100px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#open-btn {
+  margin-left: 30px;
+}
 .navigation ul li a {
-  margin-left: 20px;
+  margin-left: 100px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 35px;
 }
 .navigation hr {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+    margin-top: 25px;
 }
 
 .sidenav {
@@ -44,6 +59,7 @@ h3 {
   padding: 10px 10px 10px 32px;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
   font-size: 17px;
   color: black;
   display: block;
@@ -52,11 +68,6 @@ h3 {
 }
 .sidenav a i {
   margin-left: 10px;
-}
-
-.sidenav a:hover {
-  color: #eee;
-  background: lightblue;
 }
 
 .sidenav .closebtn {
@@ -73,77 +84,116 @@ h3 {
   padding: 20px;
 }
 /*----------------------------------------------------------------------*/
-.container {
-	margin: 0 100px 0 100px;
+.top-part ul {
+  float: right;
+  margin-top: 30px;
 }
 
- table tr td input {
-  padding: 5px;
-  width: 225px;
+.top-part {
+  overflow: auto;
 }
 
-table tr td button {
-  padding: 5px;
-  background: none;
-  border: 1px solid black;
-  border-radius: 5px;
- }
+.top-part ul li input {
+    display: block;
+    width: 250px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    display: inline-block;
+}
 
- table tr td button:hover {
-  background: green;
-  font-weight: bold;
-  color: white;
- }
+.top-part ul li button {
+    width: 80px;
+    line-height: 1.5;
+    font-size: 1rem;
+    padding: .375rem .75rem;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    color: white;
+    background-color: #28a745;
+    border-color: white;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.top-part ul li button:hover {
+  background-color: white;
+  color: #28a745;
+  border-color: #28a745; 
+}
 
 .card {
 	border: 1px solid black;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
+
 .card img {
   position: relative;
   top: 20px;
   left: 20px;
-  margin-bottom: 10px;
-	width: 200px;
-	height: 180px;
+  margin-bottom: 30px;
+	width: 230px;
+	height: 200px;
 }
 
 .card h4 {
   margin-left: 20px;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
 }
+
 .card:hover {
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.2);
 }
 
 .promote-button  {
 	float: right;
-	margin: 80px 120px 0 0;
+	margin: 90px 120px 0 0;
 }
 
 #promoter-button {
-    padding: 8px;
-    width: 150px;
-    background: none;
-    border: 1px solid black;
-    border-radius: 5px;
+    margin-top: 10px;
+    width: 100px; 
+    line-height: 1.5;
+    font-size: 1rem;
+    padding: .375rem .75rem;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    color: #28a745;
+    background-color: white;
+    border-color: #28a745;
+    cursor: pointer;
+    margin-bottom: 50px;
 }
 
 #promoter-button:hover {
-  background: green;
-  color: white;
-  font-weight: bold;
+    background-color: #28a745;
+    color: white;
 }
+/*-------------------------footer tag--------------------*/
 .footer {
-  padding: 5px;
-  margin-top: 150px;
-  width: 100%;
   border-top: 2px solid black;
-  color: black;
-  font-size: 17px;
-
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.footer p  {
-  display: inline;
+.footer ul li {
+  font-size: 17px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.footer ul li a {
+  font-size: 17px;
+}
+
+.footer ul li a:hover {
+  color: red;
+  text-decoration: underline;
 }
 
