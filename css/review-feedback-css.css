@@ -19,32 +19,35 @@ h2 {
   color: orange;
 }
 /*-------------------side navigation bar--------------------*/
-.navigation ul li {
-  list-style: none;
-  display: inline-block;
-  font-size: 30px;
-}
-
-#user-name {
-  float: right;
-  margin-right: 100px;
+header {
+  background: #fafafa;
+  overflow: auto;
+  padding: 20px;
   font-family: 'Open Sans', sans-serif;
-}
-
-#open-btn {
-  margin-left: 30px;
-}
-.navigation ul li a {
-  margin-left: 100px;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
   font-weight: bold;
+}
+
+header .open-btn {
+  float: left;
+  margin-left: 50px;
+}
+
+header .affiliox a {
+  float: left;
+  margin-left: 50px;
   text-decoration: none;
-  font-size: 35px;
+  color: black;
 }
-.navigation hr {
+
+header .loggedin {
+  float: right;
+}
+
+hr {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
-    margin-top: 25px;
 }
+
 
 .sidenav {
   height: 100%; 

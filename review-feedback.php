@@ -10,13 +10,12 @@
 </head>
 <body>
   <!-------------- Top-Navigation-Bar ---------------------->
-      <div id="main" class="navigation">
-            <ul>
-              <li id="open-btn" onclick="openNav()">&#9776;</li>
-              <li><a href="">Affiliox</a></li></a>
-              <li id="user-name">user-name</li>
-            </ul>
-          <hr>
+    <header>
+        <div class="open-btn" onclick="openNav()">&#9776;</div>
+        <div class="affiliox"><a href="">Affiliox</a></div>
+        <div class="loggedin">Welcome User name</div>
+    </header>
+    <hr>
     <!-- inner part of the evry dashboard -->
               
     <div class="container">
@@ -171,7 +170,7 @@
       <a href="promoter-statistics.php">Statstics<i class="fas fa-chart-line"></i></i></a>
       <a href="withdraw-earnings.php">Transactions<i class="fas fa-money-check-alt"></i></a>
       <a href="review-feedback.php">Feedback<i class="fas fa-phone-square"></i></i></a>
-      <a href="#">Support<i class="fas fa-envelope-open-text"></i></a>
+      <a href="support-center.php">Support<i class="fas fa-envelope-open-text"></i></a>
   </div>
   <span onclick="openNav()"></span>
 

@@ -1,5 +1,5 @@
 .clearfix {
-    overflow: auto;
+	  overflow: auto;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box;}
@@ -14,7 +14,10 @@ h2 {
   font-family: 'Open Sans', sans-serif;
   border-bottom: 2px solid black;
 }
+
+html {font-family: 'Open Sans', sans-serif;}
 /*-------------------side navigation bar--------------------*/
+
 header {
   background: #fafafa;
   overflow: auto;
@@ -85,104 +88,55 @@ hr {
   transition: margin-left .5s;
   padding: 20px;
 }
-/*----------------------------------------------------------------------*/
-.top-part ul {
-  float: right;
-  margin-top: 30px;
+
+/*-------------------Inner content-------------------*/
+.inner-part {
+  margin-top: 50px;
+  margin-bottom: 300px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: .25rem;
 }
 
-.top-part {
-  overflow: auto;
+.inner-part form {
+  margin-top: 50px;
 }
 
-.top-part ul li {
-    list-style: none;
-    display: inline-block;
+.inner-part form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: .25rem;
+  font-family: 'Open Sans', sans-serif;
+}
+.text-area textarea {
+  margin-top: 25px;
+  width: 100%;
+  height: 200px;
+  border-radius: .25rem;
+  border: 1px solid black;
+  font-family: 'Open Sans', sans-serif;
+  resize: none;
+}
+.inner-part form textarea {
+  padding: 10px;
 }
 
-.top-part ul li input {
-    display: block;
-    width: 250px;
+.button button {
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    display: inline-block;
-}
-
-.top-part ul li button {
-    width: 80px;
-    line-height: 1.5;
-    font-size: 1rem;
-    padding: .375rem .75rem;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    color: white;
+    color: #fafafa;
     background-color: #28a745;
-    border-color: white;
-    cursor: pointer;
-    margin-bottom: 50px;
+    border: 1px solid #28a745;
+    border-radius: .25rem;
+    display: inline-block;
 }
 
-.top-part ul li button:hover {
+.button button:hover {
   background-color: white;
   color: #28a745;
-  border-color: #28a745; 
 }
-
-.card {
-	border: 1px solid black;
-	margin-bottom: 40px;
-}
-
-.card img {
-  position: relative;
-  top: 20px;
-  left: 20px;
-  margin-bottom: 30px;
-	width: 230px;
-	height: 200px;
-}
-
-.card h4 {
-  margin-left: 20px;
-  margin-bottom: 20px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
-}
-
-.card:hover {
-  box-shadow: 0 0 16px 0 rgba(0,0,0,0.2);
-}
-
-.promote-button  {
-	float: right;
-	margin: 90px 120px 0 0;
-}
-
-#promoter-button {
-    margin-top: 10px;
-    width: 100px; 
-    line-height: 1.5;
-    font-size: 1rem;
-    padding: .375rem .75rem;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    color: #28a745;
-    background-color: white;
-    border-color: #28a745;
-    cursor: pointer;
-    margin-bottom: 50px;
-}
-
-#promoter-button:hover {
-    background-color: #28a745;
-    color: white;
-}
-/*-------------------------footer tag--------------------*/
+/*--------------------footer-tag--------------------*/
 .footer {
   border-top: 2px solid black;
   text-align: center;
@@ -203,6 +157,7 @@ hr {
   color: red;
   text-decoration: underline;
 }
+
 
 @media screen and (max-width: 800px){
 
